@@ -7,6 +7,6 @@ jobs:
       - uses: actions/checkout@v2
       - run: ls -la # permet de voir sur le fit ne récupère pas les fichiers du repo
       - run: pip install streamlit
-      - run: pip install Jinja2
+      - run: pip install -U Jinja2
       - run: npm install cypress
       - run: streamlit run test_modelprix.py &
