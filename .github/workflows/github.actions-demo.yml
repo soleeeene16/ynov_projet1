@@ -18,7 +18,7 @@ jobs:
       #lancement des tests unitaires
       - run: pytest test_modelprix.py
 
-      #lancement test fondamental
+      #lancement du test fondamental
       - run: streamlit run model_dashboard.py &
       - name: Cypress run
-        uses: cypress-io/github-actions@v4
+        uses: cypress-io/github-action@v4
