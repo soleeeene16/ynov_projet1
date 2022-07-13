@@ -18,7 +18,11 @@ jobs:
       #lancement des tests unitaires
       - run: pytest test_modelprix.py
 
-      #lancement du test fondamental
+      #lancement du test fonctionnel
       - run: streamlit run model_dashboard.py &
       - name: Cypress run
         uses: cypress-io/github-action@v4
+      - uses: actions/upload-artifact@v3
+        with:
+          name: video_cypresstestfonc
+          path: /home/runner/work/ynov_projet1/ynov_projet1/cypress/videos/todo.cy.js.mp4
