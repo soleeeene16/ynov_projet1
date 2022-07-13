@@ -29,7 +29,7 @@ def test_prixmin():
 
 # fonction test que le nombre de chambre ne soit pas négatif ou égal à 0
 def test_nbchambre():
-    input1 = [[100,-1,0]]#caractéristique maison
+    input1 = [[100,2,0]]#caractéristique maison
 
     #vérification nb de chambre supérieur à 0 
     assert input1[0][1]>0, " Le nombre de chambre doit être supérieur 0"
