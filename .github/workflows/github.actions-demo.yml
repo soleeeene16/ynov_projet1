@@ -10,5 +10,5 @@ jobs:
       - run: pip install -U Jinja2
       - run: pip install pytest
       - run: npm install cypress
-      - run: pytest run test_modelprix.py &
+      - run: pytest test_modelprix.py &
       - run: streamlit run model_dashboard.py &
