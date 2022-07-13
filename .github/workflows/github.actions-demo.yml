@@ -9,6 +9,7 @@ jobs:
       - run: pip install streamlit
       - run: pip install -U Jinja2
       - run: pip install pytest
+      - run: pip install joblib
       - run: npm install cypress
       - run: pytest test_modelprix.py &
       - run: streamlit run model_dashboard.py &
