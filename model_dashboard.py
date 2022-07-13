@@ -19,12 +19,12 @@ if taille <= 0:
 if nb_rooms <= 0:
     st.write("mettre nombre de chambre correct")
 if garden < 0 or garden > 1:
-    st.write("mettre numéro jardin correct")
+    st.write("mettre numéro jardin correct.")
 
 if taille > 0 and nb_rooms > 0:
     
     X = [[taille, nb_rooms, garden]]
     prediction = model.predict(X)
-    ## afficher la prediction
-    st.write("le prix de la maison est : {}". format(prediction[0]))
 
+    ## afficher la prediction
+    st.write("Le prix de la maison est : {}".format(int(prediction[0])),"€")

@@ -31,5 +31,4 @@ describe('My First Test', () => {
     expect(prixmaison).to.be.lessThan(1000000)
     })
   })
-
 })

@@ -19,7 +19,9 @@ jobs:
       - run: pytest test_modelprix.py
 
       #lancement du test fonctionnel
-      - run: streamlit run model_dashboard.py &
+      - run: docker build -t streamlit .
+      - run: docker run -p 8501:8501 -d streamlit
+      #- run: streamlit run model_dashboard.py &
       - name: Cypress run
         uses: cypress-io/github-action@v4
       - uses: actions/upload-artifact@v3
