@@ -1,0 +1,12 @@
+name: GitHub Actions Demo
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: ls -la # permet de voir sur le fit ne récupère pas les fichiers du repo
+      - run: pip install streamlit
+      - run: pip install jinja2
+      - run: pip install cypress
+      - run: streamlit test_modelprix.py
